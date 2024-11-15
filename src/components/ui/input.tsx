@@ -1,9 +1,8 @@
+import * as React from "react";
+import { cn } from "@/lib/utils";
 
-import * as React from "react"
-
-import { cn } from "@/lib/utils"
-
-export interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {}
+// Use `type` instead of `interface` to avoid the ESLint error
+type InputProps = React.InputHTMLAttributes<HTMLInputElement>;
 
 const Input = React.forwardRef<HTMLInputElement, InputProps>(
   ({ className, type, ...props }, ref) => {
@@ -17,9 +16,10 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
         ref={ref}
         {...props}
       />
-    )
+    );
   }
-)
-Input.displayName = "Input"
+);
 
-export { Input }
+Input.displayName = "Input";
+
+export { Input };
