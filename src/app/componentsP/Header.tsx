@@ -2,7 +2,6 @@
 import React, { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { HiOutlineShoppingBag } from 'react-icons/hi'
-import Image from 'next/image'
 import { BiUser } from 'react-icons/bi'
 import { useSelector } from 'react-redux'
 import { getTotalQuantity } from '@/features/cartSlice'

@@ -8,7 +8,6 @@ import { addToCart } from '@/features/cartSlice';
 import {
   Card,
   CardContent,
-  CardDescription,
   CardFooter,
   CardHeader,
   CardTitle,

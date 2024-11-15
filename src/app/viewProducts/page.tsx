@@ -25,13 +25,11 @@ type ListedProductListProps = {
   imageString: string;
 };
 
-type ProductsPageProps = {
-  productList: ListedProductListProps[];
-};
+
 
 const ListedProductsPage: React.FC = () => {
   const [products, setProducts] = useState<ListedProductListProps[]>([]);
-  const [saved, setSaved] = useState(true);
+ 
   const router = useRouter();
   useEffect(() => {
     const fetchProducts = () => {
